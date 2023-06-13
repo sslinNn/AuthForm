@@ -4,24 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cf257bb-20bd-44f7-ad89-ed46153a407d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="0cf257bb-20bd-44f7-ad89-ed46153a407d" name="Changes" comment="venv fix">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Finance-Helper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Finance-Helper.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FDataBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/FDataBase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/git/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/git/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/git/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/site.db" beforeDir="false" afterPath="$PROJECT_DIR$/web/site.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sq_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/web/sq_db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/registration.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/FDataBase.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/site.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/sq_db.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/registration.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,14 +39,17 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/slinm/Desktop/Finance-Helper",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+    "last_opened_file_path": "C:/Users/slinm/Desktop/Finance-Helper/venv",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\slinm\Desktop\Finance-Helper\web\templates" />
       <recent name="C:\Users\slinm\Desktop\Finance-Helper\web" />
+      <recent name="C:\Users\slinm\Desktop\Finance-Helper\web\database" />
     </key>
   </component>
   <component name="RunManager">
@@ -90,6 +89,18 @@
       <option name="presentableId" value="Default" />
       <updated>1684849539364</updated>
     </task>
+    <task id="LOCAL-00001" summary="venv fix">
+      <created>1684850249145</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1684850249145</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="venv fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="venv fix" />
   </component>
 </project>

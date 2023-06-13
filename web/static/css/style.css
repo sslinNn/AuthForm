@@ -1,21 +1,11 @@
 * {
-  margin: 0;
-  padding: 0;
+	padding: 0px;
+	margin: 0px;
+	border: none;
 }
 
-.header{
-  background-color: rgb(110, 110, 110);
-  text-align:center;
-}
-
-.case{
-  height: 1000px;
-  width: 100%;
-  background-color: rgb(180, 180, 180);
-  text-align: center;
-}
-
-.mainmenu{
-  font-size: 24px;
-
+.shit{
+    height: 100px;
+    width: 100%;
+    background-color: aquamarine;
 }
