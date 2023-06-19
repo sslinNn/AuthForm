@@ -1,14 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 import psycopg2
-
-# Подключение к базе данных
-conn = psycopg2.connect(
-    host="your_host",
-    database="your_database",
-    user="your_user",
-    password="your_password"
-)
-
 
 app = Flask(__name__)
 DEBUG = True
@@ -17,6 +8,11 @@ DEBUG = True
 @app.route('/home')
 def index():
     return render_template('home.html')
+
+
+@app.route('/registration')
+def registration():
+    return render_template('registration.html')
 
 
 if __name__ == "__main__":
