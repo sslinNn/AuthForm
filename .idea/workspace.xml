@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cf257bb-20bd-44f7-ad89-ed46153a407d" name="Changes" comment="venv fix">
-      <change afterPath="$PROJECT_DIR$/web/class_.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/templates/signup.html" afterDir="false" />
+    <list default="true" id="0cf257bb-20bd-44f7-ad89-ed46153a407d" name="Changes" comment="add auth forms">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/database/dbController.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/database/dbController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/templates/registration.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/flask_session/97fe7b95ba7a18f0d7bd5db518b83d6a" beforeDir="false" afterPath="$PROJECT_DIR$/web/flask_session/97fe7b95ba7a18f0d7bd5db518b83d6a" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,11 +134,31 @@
       <option name="project" value="LOCAL" />
       <updated>1686679315269</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add auth forms">
+      <option name="closed" value="true" />
+      <created>1691163136386</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1691163136386</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="venv fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="venv fix" />
+    <MESSAGE value="add auth forms" />
+    <option name="LAST_COMMIT_MESSAGE" value="add auth forms" />
   </component>
 </project>

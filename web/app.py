@@ -1,6 +1,6 @@
-from flask import Flask, render_template, url_for, request, redirect, session, jsonify
+from flask import Flask, render_template, url_for, request, redirect
 from flask_session import Session
-import psycopg2
+from werkzeug.security import generate_password_hash           #, check_password_hash
 from database import dbController
 from class_ import User
 
@@ -9,7 +9,6 @@ app = Flask(__name__)
 app.secret_key = 'aOKmc90-ij2n387ch8un1280nx1809m'
 app.config['SESSION_TYPE'] = 'filesystem'
 Session(app)
-db = dbController.dbConn()
 
 
 @app.route('/')
@@ -24,9 +23,15 @@ def signup():
         user = User(login=request.form['login'],
                     email=request.form['email'],
                     password=request.form['password'])
-        session['user'] = user
-        # return redirect(url_for('home'))
-        return jsonify(user.get_info())
+        password_check = request.form['passwordCheck']
+        if user.password != password_check:
+            return f"The password is not correct"
+        else:
+            password_hash = generate_password_hash(password=request.form['password'])
+            dbController.create_user(login=request.form['login'],
+                                     password=password_hash,
+                                     email=request.form['email'])
+        return redirect(url_for('login'))
     else:
         return render_template('signup.html')
 

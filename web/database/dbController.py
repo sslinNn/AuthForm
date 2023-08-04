@@ -1,5 +1,26 @@
 import psycopg2
 
+db_settings = {
+    "host": "localhost",
+    "database": "fh",
+    "user": "postgres",
+    "password": "razer1991",
+}
+
+
+def create_user(login, password, email):
+    try:
+        conn = psycopg2.connect(**db_settings)
+        cur = conn.cursor()
+        cur.execute("INSERT INTO users (username, password, email) VALUES (%s, %s, %s);",
+                    (login, password, email))
+        conn.commit()
+        cur.close()
+        conn.close()
+        return True
+    except Exception as e:
+        print("Error creating user:", e)
+        return False
 
 def dbConn():
     # Подключение к базе данных
