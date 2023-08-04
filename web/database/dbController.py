@@ -5,9 +5,9 @@ def dbConn():
     # Подключение к базе данных
     conn = psycopg2.connect(
         host="localhost",
-        database="finance_helper",
+        database="fh",
         user="postgres",
-        password="admin"
+        password="razer1991"
     )
 
     # Создание объекта-курсора

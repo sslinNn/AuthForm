@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+
+
+{% block title %}
+Registration
+{% endblock %}
+
+
+{% block body %}
+
+<div class="shit">
+    <div class="home">
+        <p><a href="{{ url_for ('home') }}">Home</a></p>
+    </div>
+    <p><a href="{{ url_for ('login') }}">Login</a></p>
+</div>
+
+<div class="authForm">
+    <form method="POST">
+        <br>
+        <input type="login" name="login" id="login" placeholder="Enter your login">
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+        <input type="password" name="password" id="password" placeholder="Enter your password">
+        <input type="password" name="passwordCheck" id="passwordCheck" placeholder="Repeat your password">
+        <br>
+        <button type="submit">Save!</button>
+    </form>
+</div>
+
+{% endblock %}

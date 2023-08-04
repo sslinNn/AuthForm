@@ -4,8 +4,32 @@
 	border: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 .shit{
     height: 100px;
     width: 100%;
     background-color: aquamarine;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1200px;
+}
+
+.shit p{
+    font-size: 32px;
+}
+
+
+.authForm form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.authForm input{
+    text-align: center;
 }
