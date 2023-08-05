@@ -15,7 +15,6 @@ Session(app)
 
 @login_manager.user_loader
 def load_user(user_id):
-    print('user load')
     return UserLogin().from_db(user_id)
 
 
@@ -51,7 +50,7 @@ def login():
         if user and check_password_hash(user[3], request.form['password']):
             user_login = UserLogin().create(user)
             login_user(user_login)
-            return f'U are welcome {user[1]}'
+            return f'U are welcome, {user[1]}'
         else:
             return f'Fck u!'
     return render_template('login.html')

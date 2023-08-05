@@ -4,13 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cf257bb-20bd-44f7-ad89-ed46153a407d" name="Changes" comment="add auth forms">
-      <change afterPath="$PROJECT_DIR$/web/templates/profile.html" afterDir="false" />
+    <list default="true" id="0cf257bb-20bd-44f7-ad89-ed46153a407d" name="Changes" comment="register + login system">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/class_.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/user_C.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/database/dbController.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/database/dbController.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/flask_session/97fe7b95ba7a18f0d7bd5db518b83d6a" beforeDir="false" afterPath="$PROJECT_DIR$/web/flask_session/97fe7b95ba7a18f0d7bd5db518b83d6a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/user_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/user_C.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +27,20 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;sslinNn&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="f0747cf5-95e5-4b35-94f0-ffee8ba79a8d" />
+        <option name="url" value="https://github.com/sslinNn/Finance-Helper" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -144,7 +159,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691163136386</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="register + login system">
+      <option name="closed" value="true" />
+      <created>1691236861267</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1691236861267</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -161,6 +184,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="venv fix" />
     <MESSAGE value="add auth forms" />
-    <option name="LAST_COMMIT_MESSAGE" value="add auth forms" />
+    <MESSAGE value="register + login system" />
+    <option name="LAST_COMMIT_MESSAGE" value="register + login system" />
   </component>
 </project>

@@ -1,11 +1,11 @@
 from web.database import dbController
 
+
 class User:
     def __init__(self, login, password, email):
         self.login = login
         self.password = password
         self.email = email
-
 
     def get_info(self):
         info = {'login': self.login,
@@ -22,7 +22,6 @@ class UserLogin:
     def create(self, user):
         self.__user = user
         return self
-
 
     def is_authentificated(self):
         return True
