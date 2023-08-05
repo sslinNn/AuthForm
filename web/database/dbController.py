@@ -22,28 +22,38 @@ def create_user(login, password, email):
         print("Error creating user:", e)
         return False
 
-def dbConn():
-    # Подключение к базе данных
-    conn = psycopg2.connect(
-        host="localhost",
-        database="fh",
-        user="postgres",
-        password="razer1991"
-    )
 
-    # Создание объекта-курсора
-    cur = conn.cursor()
+def get_user(user_id):
+    try:
+        conn = psycopg2.connect(**db_settings)
+        cur = conn.cursor()
+        cur.execute(f'SELECT * FROM users WHERE user_id = {user_id} LIMIT 1')
+        res = cur.fetchone()
+        cur.close()
+        conn.close()
+        if not res:
+            print('Пользователь не найден!')
+            return False
+        else:
+            return res
+    except Exception as e:
+        print("Error:", e)
+        return False
 
-    # Выполнение запроса
-    cur.execute("SELECT * FROM users")
 
-    # Получение результатов
-    rows = cur.fetchall()
-
-    # Вывод результатов
-    for row in rows:
-        print(row)
-
-    # Закрытие курсора и соединения с базой данных
-    cur.close()
-    conn.close()
+def get_user_by_username(username):
+    try:
+        conn = psycopg2.connect(**db_settings)
+        cur = conn.cursor()
+        cur.execute(f"SELECT * FROM users WHERE username = '{username}' LIMIT 1")
+        res = cur.fetchone()
+        cur.close()
+        conn.close()
+        if not res:
+            print('Пользователь не найден!')
+            return False
+        else:
+            return res
+    except Exception as e:
+        print("Error:", e)
+        return False
