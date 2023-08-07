@@ -1,9 +1,9 @@
-from flask import Flask, render_template, url_for, request, redirect
+from flask import Flask, render_template, url_for, request, redirect, flash
 from flask_session import Session
-from flask_login import LoginManager, login_user
+from flask_login import LoginManager, login_user, login_required, logout_user, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
 from database import dbController
-from user_C import User, UserLogin
+from user_C import User, UserData
 
 
 app = Flask(__name__)
@@ -15,7 +15,7 @@ Session(app)
 
 @login_manager.user_loader
 def load_user(user_id):
-    return UserLogin().from_db(user_id)
+    return UserData().from_db(user_id)
 
 
 @app.route('/')
@@ -46,24 +46,25 @@ def signup():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        user = dbController.get_user_by_username(request.form['login'])
+        user = dbController.get_user_by_username(request.form['username'].lower())
         if user and check_password_hash(user[3], request.form['password']):
-            user_login = UserLogin().create(user)
+            user_login = UserData().create(user)
             login_user(user_login)
-            return f'U are welcome, {user[1]}'
+            return redirect(url_for('profile'))
         else:
-            return f'Fck u!'
+            return f'Invalid data!'
     return render_template('login.html')
 
 
-@app.route('/profile/<int:user_id>')
-def profile(user_id):
-    return f'User - {user_id}'
-    # return render_template('profile.html')
+@app.route('/profile')
+@login_required
+def profile():
+    user = User(login=current_user.get_username(),
+                email=current_user.get_email(),
+                password=current_user.get_password()).get_info()
+    print(user)
 
-# @app.route('/profile/<int:user_id>')
-# def profile(user_id):
-#     return f'lsdf {user_id}'
+    return render_template('profile.html', user=user)
 
 
 if __name__ == "__main__":

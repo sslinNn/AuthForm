@@ -1,21 +1,12 @@
 {% extends 'base.html' %}
 
 
-
 {% block title %}
 Registration
 {% endblock %}
 
 
 {% block body %}
-
-<div class="shit">
-    <div class="home">
-        <p><a href="{{ url_for ('home') }}">Home</a></p>
-    </div>
-    <p><a href="{{ url_for ('login') }}">Login</a></p>
-</div>
-
 <div class="authForm">
     <form method="POST">
         <br>
@@ -27,5 +18,4 @@ Registration
         <button type="submit">Save!</button>
     </form>
 </div>
-
 {% endblock %}

@@ -10,23 +10,26 @@ a{
     color: black;
 }
 
-body{
-    background-color: #000;
-}
-
-.shit{
+header{
     height: 50px;
     width: auto;
     background-color: aquamarine;
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
-    padding-left: 43%;
+    padding-left: 40%;
     align-items: center;
     gap: 25px;
     font-family: 'Jost';    
     font-weight: 700;
     font-style: italic;
 }
+
+body{
+    color: aquamarine;
+    background-color: #000;
+}
+
 
 .shit p{
     font-size: 32px;

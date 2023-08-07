@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cf257bb-20bd-44f7-ad89-ed46153a407d" name="Changes" comment="register + login system">
+    <list default="true" id="0cf257bb-20bd-44f7-ad89-ed46153a407d" name="Changes" comment="shit staff">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/flask_session/97fe7b95ba7a18f0d7bd5db518b83d6a" beforeDir="false" afterPath="$PROJECT_DIR$/web/flask_session/97fe7b95ba7a18f0d7bd5db518b83d6a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/flask_session/2029240f6d1128be89ddc32729463129" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/flask_session/97fe7b95ba7a18f0d7bd5db518b83d6a" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/web/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/static/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/signup.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/user_C.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/user_C.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +26,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -57,17 +62,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/slinm/Desktop/Finance-Helper/web/templates&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/slinm/Desktop/Finance-Helper/web/templates",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\slinm\Desktop\Finance-Helper\web\templates" />
@@ -167,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1691236861267</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="shit stuff">
+      <option name="closed" value="true" />
+      <created>1691244559248</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691244559248</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,6 +199,7 @@
     <MESSAGE value="venv fix" />
     <MESSAGE value="add auth forms" />
     <MESSAGE value="register + login system" />
-    <option name="LAST_COMMIT_MESSAGE" value="register + login system" />
+    <MESSAGE value="shit staff" />
+    <option name="LAST_COMMIT_MESSAGE" value="shit staff" />
   </component>
 </project>
