@@ -11,15 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap" rel="stylesheet">
     <title>{% block title %}{% endblock %}</title>
 </head>
+
 <body>
-<header>
-    <!-- <div class="shit"> -->
-    <p><a href="{{ url_for ('home') }}">Home</a></p>
-    <p><a href="{{ url_for ('signup') }}">Sign Up</a></p>
-    <p><a href="{{ url_for ('login') }}">Login</a></p>
-    <p><a href="{{ url_for ('profile') }}">Profile</a></p>
-    <!-- </div> -->
-</header>
+    <header>
+        <!-- <div class="shit"> -->
+        <p><a href="{{ url_for ('home') }}">Home</a></p>
+        <p><a href="{{ url_for ('signup') }}">Sign Up</a></p>
+        <p><a href="{{ url_for ('login') }}">Login</a></p>
+        <p><a href="{{ url_for ('profile') }}">Profile</a></p>
+        <!-- </div> -->
+    </header>
 {% block body %}
 
 {% endblock %}

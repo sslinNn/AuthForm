@@ -7,6 +7,10 @@ Registration
 
 
 {% block body %}
+
+{% for ctgry, msg in get_flashed_messages(True) %}
+    <div class="flash {{ctgry}}"> {{msg}} </div>
+{% endfor %}
 <div class="authForm">
     <form method="POST">
         <br>
@@ -18,4 +22,5 @@ Registration
         <button type="submit">Save!</button>
     </form>
 </div>
+
 {% endblock %}

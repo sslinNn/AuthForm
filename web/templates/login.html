@@ -7,6 +7,11 @@ Login
 
 
 {% block body %}
+
+{% for ctgry, msg in get_flashed_messages(True) %}
+    <div class="flash {{ctgry}}"> {{msg}} </div>
+{% endfor %}
+
 <div class="authForm">
     <form method="POST">
         <br>
@@ -16,4 +21,5 @@ Login
         <button type="submit">Log in</button>
     </form>
 </div>
+
 {% endblock %}

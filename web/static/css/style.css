@@ -25,6 +25,23 @@ header{
     font-style: italic;
 }
 
+.flash{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flash.success{    
+    font-size: 20px;
+    border: 2px solid aquamarine;
+}
+
+.flash.error{
+    font-size: 20px;
+    color: rgb(145, 70, 70);
+    border: 2px solid rgb(88, 143, 206);
+}
+
 body{
     color: aquamarine;
     background-color: #000;
@@ -49,7 +66,29 @@ body{
 
 .staff{
     display: flex;
-    height: 800px;
-    width: 300px;
+    align-items: center;
+    margin-left: 23%;
+    margin-top: 2%;
+    height: auto;
+    width: auto;
     color: aquamarine;
+}
+
+.staff.error{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 27%;
+    color: aquamarine;
+}
+
+.error{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data{
+    margin-left: 5%;
+    margin-right: 5%;
 }
