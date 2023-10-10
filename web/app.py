@@ -26,6 +26,9 @@ def home():
 
 @app.route('/signup', methods=['POST', 'GET'])
 def signup():
+    if request.method == 'GET':
+        if current_user.is_authenticated:
+            return redirect(url_for('profile'))
     if request.method == 'POST':
         user = User(login=request.form['login'],
                     email=request.form['email'],
@@ -66,6 +69,9 @@ def signup():
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    if request.method == 'GET':
+        if current_user.is_authenticated:
+            return redirect(url_for('profile'))
     if request.method == 'POST':
         user = dbController.get_user_by_username(request.form['username'].lower())
         if user and check_password_hash(user[3], request.form['password']):
@@ -86,6 +92,12 @@ def profile():
     print(user)
 
     return render_template('profile.html', user=user)
+
+@app.route('/logout/')
+@login_required
+def logout():
+    logout_user()
+    return redirect(url_for('login'))
 
 @app.errorhandler(404)
 def pageNot(error):

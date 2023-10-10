@@ -12,5 +12,6 @@ Profile
     {% for key, data in user.items() %}
         <p> {{ key }} - {{data}}</p>
     {% endfor %}
+    <p><a href="{{ url_for('logout') }}" style="color: red">Logout</a></p>
 </div>
 {% endblock %}
