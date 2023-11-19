@@ -46,8 +46,8 @@ def signup():
             if user.login.lower() == dbController.get_user_by_username(user.login.lower())[1]:
                 flash('This user is already exist', 'error')
                 return render_template('signup.html')
-        except:
-            pass
+        except Exception as e:
+            print('Error: ', e)
         if len(user.password) < 6:
             flash('Pass should be bigger then 6 symbols', 'error')
             return render_template('signup.html')
@@ -89,8 +89,6 @@ def profile():
     user = User(login=current_user.get_username(),
                 email=current_user.get_email(),
                 password=current_user.get_password()).get_info()
-    print(user)
-
     return render_template('profile.html', user=user)
 
 @app.route('/logout/')
