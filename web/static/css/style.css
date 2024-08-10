@@ -36,7 +36,10 @@ body{
 }
 
 
+
+
 .authForm form{
+    z-index: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,6 +48,12 @@ body{
 
 .authForm input{
     text-align: center;
+}
+
+.flash{
+    display: flex;
+    z-index: 2;
+    justify-content: center;
 }
 
 .staff{

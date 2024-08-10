@@ -32,7 +32,8 @@ def signup():
                     password=request.form['password'])
         password_check = request.form['passwordCheck']
         if user.password != password_check:
-            return f"The password is not correct"
+            flash(f"The password is not correct")
+            return render_template('signup.html')
         else:
             password_hash = generate_password_hash(password=request.form['password'])
             dbController.create_user(login=request.form['login'].lower(),
@@ -52,7 +53,7 @@ def login():
             login_user(user_login)
             return redirect(url_for('profile'))
         else:
-            return f'Invalid data!'
+            flash(f'Invalid data! Try again')
     return render_template('login.html')
 
 
@@ -62,8 +63,6 @@ def profile():
     user = User(login=current_user.get_username(),
                 email=current_user.get_email(),
                 password=current_user.get_password()).get_info()
-    print(user)
-
     return render_template('profile.html', user=user)
 
 

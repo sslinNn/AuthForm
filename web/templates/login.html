@@ -12,8 +12,15 @@ Login
         <br>
         <input type="username" name="username" id="username" placeholder="Enter your login">
         <input type="password" name="password" id="password" placeholder="Enter your password">
-        <br>
+        {% if get_flashed_messages() %}
+            {% for msg in get_flashed_messages() %}
+                <div class="flash"> {{msg}} </div>
+            {% endfor %}
+        {% else %}
+            <br>
+        {% endif %}
         <button type="submit">Log in</button>
     </form>
+
 </div>
 {% endblock %}

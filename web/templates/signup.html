@@ -14,7 +14,13 @@ Registration
         <input type="email" name="email" id="email" placeholder="Enter your email">
         <input type="password" name="password" id="password" placeholder="Enter your password">
         <input type="password" name="passwordCheck" id="passwordCheck" placeholder="Repeat your password">
-        <br>
+        {% if get_flashed_messages() %}
+            {% for msg in get_flashed_messages() %}
+                <div class="flash"> {{msg}} </div>
+            {% endfor %}
+        {% else %}
+            <br>
+        {% endif %}
         <button type="submit">Save!</button>
     </form>
 </div>
