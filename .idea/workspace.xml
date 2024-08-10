@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="0cf257bb-20bd-44f7-ad89-ed46153a407d" name="Changes" comment="+ profile">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/app.py" afterDir="false" />
@@ -11,6 +12,11 @@
       <change beforePath="$PROJECT_DIR$/web/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/web/templates/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/web/templates/signup.html" afterDir="false" />
+=======
+    <list default="true" id="0cf257bb-20bd-44f7-ad89-ed46153a407d" name="Changes" comment="add logout button&#10;fix some css + html shit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/web/app.py" afterDir="false" />
+>>>>>>> 829fd98d85515e08c34ba116a36b2f4539f4b281
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,15 +36,13 @@
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;sslinNn&quot;
   }
 }</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="f0747cf5-95e5-4b35-94f0-ffee8ba79a8d" />
-        <option name="url" value="https://github.com/sslinNn/Finance-Helper" />
+        <option name="accountId" value="f3351b28-6b10-4e26-a327-2f04de333e18" />
+        <option name="url" value="https://github.com/sslinNn/Finance-Helper.git" />
       </UrlAndAccount>
     </option>
   </component>
@@ -49,8 +53,7 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 1
+  &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2QCFDcDOzdhu57goSOzNk5uCITT" />
   <component name="ProjectViewState">
@@ -65,14 +68,15 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+<<<<<<< HEAD
     &quot;last_opened_file_path&quot;: &quot;C:/Users/slinm/Desktop/Finance-Helper/web/templates&quot;,
+=======
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/slinm/Desktop/leetcode&quot;,
+>>>>>>> 829fd98d85515e08c34ba116a36b2f4539f4b281
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\slinm\Desktop\Finance-Helper\web\templates" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\slinm\Desktop\Finance-Helper\web\templates" />
       <recent name="C:\Users\slinm\Desktop\Finance-Helper\web" />
@@ -101,7 +105,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="dbController" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Finance-Helper" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -109,11 +113,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web/database" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/web" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web/database/dbController.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/web/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -125,7 +129,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.app" />
-        <item itemvalue="Python.dbController" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -152,22 +156,23 @@
       <option name="project" value="LOCAL" />
       <updated>1686679315269</updated>
     </task>
-    <task id="LOCAL-00003" summary="add auth forms">
+    <task id="LOCAL-00003" summary="+404ErrorHandler&#10;+regDataChecker">
       <option name="closed" value="true" />
-      <created>1691163136386</created>
+      <created>1694546633104</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1691163136386</updated>
+      <updated>1694546633104</updated>
     </task>
-    <task id="LOCAL-00004" summary="register + login system">
+    <task id="LOCAL-00004" summary="add logout button&#10;fix some css + html shit">
       <option name="closed" value="true" />
-      <created>1691236861267</created>
+      <created>1696959720976</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1691236861267</updated>
+      <updated>1696959720976</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00005" summary="shit stuff">
       <option name="closed" value="true" />
       <created>1691244559248</created>
@@ -185,25 +190,23 @@
       <updated>1691441525080</updated>
     </task>
     <option name="localTasksCounter" value="7" />
+=======
+    <option name="localTasksCounter" value="5" />
+>>>>>>> 829fd98d85515e08c34ba116a36b2f4539f4b281
     <servers />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="venv fix" />
+<<<<<<< HEAD
     <MESSAGE value="add auth forms" />
     <MESSAGE value="register + login system" />
     <MESSAGE value="shit staff" />
     <MESSAGE value="+ profile" />
     <option name="LAST_COMMIT_MESSAGE" value="+ profile" />
+=======
+    <MESSAGE value="+404ErrorHandler&#10;+regDataChecker" />
+    <MESSAGE value="add logout button&#10;fix some css + html shit" />
+    <option name="LAST_COMMIT_MESSAGE" value="add logout button&#10;fix some css + html shit" />
+>>>>>>> 829fd98d85515e08c34ba116a36b2f4539f4b281
   </component>
 </project>

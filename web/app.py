@@ -3,7 +3,7 @@ from flask_session import Session
 from flask_login import LoginManager, login_user, login_required, logout_user, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
 from database import dbController
-from user_C import User, UserData
+from userController import User, UserData
 
 
 app = Flask(__name__)
@@ -26,26 +26,57 @@ def home():
 
 @app.route('/signup', methods=['POST', 'GET'])
 def signup():
+    if request.method == 'GET':
+        if current_user.is_authenticated:
+            return redirect(url_for('profile'))
     if request.method == 'POST':
         user = User(login=request.form['login'],
                     email=request.form['email'],
                     password=request.form['password'])
         password_check = request.form['passwordCheck']
+<<<<<<< HEAD
         if user.password != password_check:
             flash(f"The password is not correct")
+=======
+
+        #            Проверки данных перед сохранением
+        if not user.login or not user.password or not password_check:
+            flash('Fill all forms!', 'error')
+            return render_template('signup.html')
+        elif len(user.login) < 4 or len(user.login) > 20:
+            flash('Login should be from 4 to 20 symbols!', 'error')
+            return render_template('signup.html')
+        try:
+            if user.login.lower() == dbController.get_user_by_username(user.login.lower())[1]:
+                flash('This user is already exist', 'error')
+                return render_template('signup.html')
+        except Exception as e:
+            print('Error: ', e)
+        if len(user.password) < 6:
+            flash('Pass should be bigger then 6 symbols', 'error')
+            return render_template('signup.html')
+        elif user.password != password_check:
+            flash('Password is not correct!', 'error')
+>>>>>>> 829fd98d85515e08c34ba116a36b2f4539f4b281
             return render_template('signup.html')
         else:
+            #            Хеширование пароля
             password_hash = generate_password_hash(password=request.form['password'])
+
+            #            Сохраняет данные в БД
             dbController.create_user(login=request.form['login'].lower(),
                                      password=password_hash,
                                      email=request.form['email'])
-        return redirect(url_for('login'))
+            return redirect(url_for('login'))
     else:
         return render_template('signup.html')
 
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
+    if request.method == 'GET':
+        if current_user.is_authenticated:
+            return redirect(url_for('profile'))
     if request.method == 'POST':
         user = dbController.get_user_by_username(request.form['username'].lower())
         if user and check_password_hash(user[3], request.form['password']):
@@ -53,7 +84,11 @@ def login():
             login_user(user_login)
             return redirect(url_for('profile'))
         else:
+<<<<<<< HEAD
             flash(f'Invalid data! Try again')
+=======
+            flash(f'Invalid data!', 'error')
+>>>>>>> 829fd98d85515e08c34ba116a36b2f4539f4b281
     return render_template('login.html')
 
 
@@ -64,6 +99,16 @@ def profile():
                 email=current_user.get_email(),
                 password=current_user.get_password()).get_info()
     return render_template('profile.html', user=user)
+
+@app.route('/logout/')
+@login_required
+def logout():
+    logout_user()
+    return redirect(url_for('login'))
+
+@app.errorhandler(404)
+def pageNot(error):
+    return render_template('error.html', error=error)
 
 
 if __name__ == "__main__":

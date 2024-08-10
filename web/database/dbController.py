@@ -4,7 +4,7 @@ db_settings = {
     "host": "localhost",
     "database": "fh",
     "user": "postgres",
-    "password": "razer1991",
+    "password": "admin",
 }
 
 
